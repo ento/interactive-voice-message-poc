@@ -1,0 +1,7 @@
+digits: '9'
+output: <?xml version="1.0" encoding="UTF-8"?><Response><Gather action="/menu-callback"
+  method="POST" numDigits="1" timeout="120"><Say loop="1" voice="Polly.Matthew-Neural">Please
+  press 1 to play the message again. Press 2 for the sender's email address. Press
+  3 to record a voice message to be sent back. Press any other key to repeat the options.
+  Or, please feel free to hang up now. I will wait for 2 minutes before ending the
+  call.</Say></Gather><Say voice="Polly.Matthew-Neural">Okay, thank you very much!</Say></Response>

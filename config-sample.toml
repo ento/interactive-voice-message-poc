@@ -1,0 +1,34 @@
+[IVM]
+# Twilio account SID and auth token, which can be found in your Twilio console:
+# https://console.twilio.com/
+# It's preferable to set these via env vars
+#   export FLASK_IVM__twilio_account_sid=...
+#   export FLASK_IVM__twilio_auth_token=...
+# See: http://twil.io/secure
+#twilio_account_sid = "..."
+#twilio_auth_token = "..."
+
+ngrok_enabled = true
+# Auth token may or may not be needed. Auth token saved to ngrok's default config
+# might also get picked up automatically (haven't tried).
+# This can also be set as an env var.
+#   export FLASK_IVM__ngrok_auth_token=...
+# ngrok_auth_token = "..."
+
+# Your Twilio number
+from_number = "01112223333"
+# The number to call
+to_number = "+04445556666"
+
+# Test voices here
+# https://ai-service-demos.go-aws.com/polly
+machine_voice = "Polly.Matthew-Neural"
+human_voice = "Polly.Salli-Neural"
+
+[IVM.variables]
+from_name = "Your name"
+subject = "Short description"
+email = "Your email address"
+main_message = """
+Message to deliver.
+"""

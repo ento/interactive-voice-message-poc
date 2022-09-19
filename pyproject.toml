@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "interactive-voice-message-poc"
+version = "0.1.0"
+license = "Apache-2.0"
+dependencies = [
+  "Flask",
+  "pydantic",
+  "pyngrok",
+  "tomlkit",
+  "twilio",
+]
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "flake8",
+  "isort",
+  "pytest",
+  "pytest-golden",
+]
+
+[tools.pytest]
+enable_assertion_pass_hook = true
